@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+ <!--   <PreferenceCategory android:title="나에게 알리기">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="useAlarm"
+            android:summaryOff="알림을 사용하지 않습니다"
+            android:summaryOn="알림을 사용합니다."
+            android:title="알림 사용" />
+        <ListPreference
+            android:defaultValue="0"
+            android:dependency="useAlarm"
+            android:entries="@array/alarmPeriod"
+            android:entryValues="@array/alarmPeriod_values"
+            android:key="alarmPeriod"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="알림 주기" />
+    </PreferenceCategory>-->
+    <PreferenceCategory android:title="알림 설정">
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/alarmType"
+            android:entryValues="@array/alarmType_values"
+            android:key="alarmType"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="알림 종류"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="계좌관리">
+        <Preference
+            android:key="account"
+            android:title="계좌 설정">
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="회원탈퇴">
+        <Preference
+            android:key="withdraw"
+            android:title="탈퇴하기" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

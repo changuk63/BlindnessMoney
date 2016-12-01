@@ -1,98 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingRight="5px"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.leechanguk.blindnessmoney.MainActivity">
+    tools:context="com.example.leechanguk.blindnessmoney.MainActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+       <TableRow>
+           <TextView
+               android:layout_width="70dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="ID"
+               android:textSize="15dp"/>
+           <EditText
+               android:layout_width="180dp"
+               android:layout_height="wrap_content"
+               android:singleLine="true"
+               android:ems="8"
+               android:layout_weight="13"
+               android:hint="Enter Id"
+               android:maxLength="15"
+               android:id="@+id/inputID" />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="ID 중복확인"
+               android:id="@+id/duplicateView"/>
+       </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아이디는 8자리 영문자(+숫자) 입니다."
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:visibility="invisible"
+            android:id="@+id/join_id_warning"
+            />
+        <TableRow>
+            <TextView
+                android:layout_width = "70dp"
+                android:layout_height = "wrap_content"
+                android:text = "PW"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password"
+                android:ems="8"
+                android:inputType="textPassword"
+                android:id="@+id/inputPW"/>
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호는 8자리 이상 영문자(+숫자) 입니다."
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:visibility="invisible"
+            android:id="@+id/join_pw_warning"/>
+        <TableRow>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="PW 확인"
+                android:textSize="15dp"
+                />
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Check Password"
+                android:inputType="textPassword"
+                android:ems="8"
+                android:id="@+id/inputCheckPW"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width = "70dp"
+                android:layout_height = "wrap_content"
+                android:text = "e-mail"
+                android:id="@+id/textView2"
+                android:textSize="15dp"/>
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email "
+                android:ems="8"
+                android:inputType="textPassword"
+                android:id="@+id/inputEMail"/>
+        </TableRow>
+    </TableLayout>
+
+<!--
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ID"
-        android:textSize="72dp"/>
-
-    <TextView
-        android:layout_width = "wrap_content"
-        android:layout_height = "wrap_content"
-        android:text = "P/W"
-        android:textSize="50dp"
+        android:text="account\n number"
+        android:textSize="30sp"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="10dp"/>
+-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="check \n  p/w"
-        android:textSize="35dp"
-        android:layout_marginTop="170dp"/>
-
-    <TextView
-        android:layout_width = "wrap_content"
-        android:layout_height = "wrap_content"
-        android:text = "e-mail"
-        android:textSize="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="260dp"
-        />
-
+<!--
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="25dp"
-        android:hint="        Enter Id         "
-        android:maxLength="15"
-        android:id="@+id/inputID" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
-        android:hint=" Enter Password "
-        android:layout_marginLeft="120dp"
-        android:inputType="textPassword"
-        android:layout_alignParentEnd="false"
-        android:id="@+id/inputPW"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:hint=" Check Password "
-        android:layout_marginLeft="120dp"
-        android:inputType="textPassword"
-        android:layout_alignParentEnd="false"
-        android:id="@+id/inputCheckPW"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
-        android:hint=" Enter Email "
-        android:layout_marginLeft="120dp"
-        android:inputType="textPassword"
-        android:layout_alignParentEnd="false"
-        android:id="@+id/inputEMail"/>
+        android:layout_alignLeft="@+id/inputID"
+        android:layout_below="@+id/inputEMail"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Enter accontnumber    "/>
+-->
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="     Join    "
-        android:layout_marginTop="350dp"
-        android:layout_marginLeft="130dp"
-        android:id="@+id/joinRequire"/>
+        android:text="회원가입"
+        android:layout_gravity="center"
+        android:id="@+id/joinRequire"
+        android:layout_marginTop="20dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ID duplicate view"
-        android:layout_alignBottom="@+id/inputID"
-        android:layout_toEndOf="@+id/inputID"
-        android:id="@+id/duplicateView"/>
-
-</RelativeLayout>
+</LinearLayout>

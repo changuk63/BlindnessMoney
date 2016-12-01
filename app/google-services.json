@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "454801260006",
+    "firebase_url": "https://blindmoney-3abd1.firebaseio.com",
+    "project_id": "blindmoney-3abd1",
+    "storage_bucket": "blindmoney-3abd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454801260006:android:833e6bd8000bf47a",
+        "android_client_info": {
+          "package_name": "com.example.leechanguk.blindnessmoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454801260006-b506q340lb7itv7qotnvcami4dsm0lll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxHUciD6xr_F5C_kj0LEN_iP7H0Xq1CY4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

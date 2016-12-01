@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarmType">
+        <item>PUSH 알림</item>
+        <item>문자 알림</item>
+    </string-array>
+    <string-array name="alarmType_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="alarmPeriod">
+        <item>1일</item>
+        <item>일주일</item>
+        <item>한번만</item>
+    </string-array>
+    <string-array name="alarmPeriod_values">
+        <item>0</item>
+        <item>1</item>
+        <item>-1</item>
+    </string-array>
+</resources>
